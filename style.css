@@ -41,6 +41,19 @@ body {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /*HEADER LOGO */
 .site__logo {
     display: inline-block;
@@ -136,6 +149,10 @@ body {
     margin-right: 30px;
 }
 
+.card:hover .overlay {
+    display: block;
+}
+
 .card:last-child {
     margin-right: 0;
 }
@@ -196,6 +213,7 @@ body {
     left: 0;
     border: 10px solid rgba(255, 255, 255, 0.5);
     background-clip: padding-box;
+    display: none;
 }
 
 .overlay__list {
@@ -215,6 +233,20 @@ body {
     background-position: center;
 }
 
+.overlay__link__last {
+    display: block;
+    width: 164px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: bottom 12px left 12px;
+}
+
+/*.overlay__link:last-сhild {
+    display: inline-block;
+    width: 100%;
+}*/
+
+
 .overlay__link__heart {
     background-image: url(./images/mini_heart.png);
 }
@@ -232,6 +264,7 @@ body {
 }
 
 .overlay__list__icon {
+    position: relative;
     float: left;
     border: 1px solid rgb(255, 255, 255);
     margin-right: 9px;
@@ -244,37 +277,33 @@ body {
     border: 1px solid rgb(255, 255, 255);
     height: 50px;
     width: 166px;
-    background-color: rgb(50, 50, 50);
 }
 
 .overlay__link__telega__title {
+/*    display: inline-block;*/
     font-size: 14px;
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    /* text-align: center; */
-
+    width: 164px;
+/*    text-align: center;*/
 }
 
-/* .add_to_cart {
-    font-size: 14px;
-    font-family: "OpenSans";
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    line-height: 2.286;
-    text-align: center;
+.end__child:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.last__2 {
     position: absolute;
-    left: 617.39px;
-    top: 1142.25px;
-    width: 87px;
-    height: 10px;
-    z-index: 41;
-  } */
-  
+    bottom: 0;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-
-
-
+.overlay__list__icon:not(:last-child):hover {
+    background-color: rgb(26, 188, 156);
+}
 
 .overlay__list__icon:nth-child(3) {
     margin-right: 0;
