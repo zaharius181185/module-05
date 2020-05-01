@@ -20,7 +20,7 @@ a {
 
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -39,6 +39,7 @@ body {
 ._cont {
     max-width: 1110px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .visually-hidden {
@@ -110,8 +111,80 @@ body {
 
 /* SLIDER */
 .slider {
-    /* display: inline-block; */
+   position: relative;
 }
+
+.slider__img {
+    width: 100%;
+}
+
+
+
+/* button */
+.slider__btn__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.slider__btn {
+    width: 103px;
+    height: 104px;
+    background-color: rgb(26, 188, 156);
+}
+
+.prev {
+    float: left;
+    background-image: url(./images/prev_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.inactive__btn {
+    background-color: rgba(93, 87, 85, 0.255);
+}
+
+.next {
+    float: right;
+    background-image: url(./images/next_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* slider__title */
+.slider__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align-last: left;
+    max-width: 790px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+.slider__slogan {
+    font-size: 60px;
+}
+
+.slider__text {
+    font-size: 24px;
+    line-height: 54px;
+}
+
+
 
 
 
