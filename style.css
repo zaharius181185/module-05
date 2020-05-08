@@ -95,8 +95,9 @@ body {
 }
 
 .nav__a {
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     text-decoration: none;
@@ -213,7 +214,6 @@ body {
 .card {
     position: relative;
     max-width: 255px;
-    height: 322px;
     float: left;
     margin-right: 30px;
 }
@@ -228,8 +228,6 @@ body {
 
 .new__collection__img {
     position: relative;
-    height: 322px;
-    width: 255px;
 }
 
 .card:hover .bottom__card {
@@ -274,8 +272,8 @@ body {
 }
 
 .overlay {
-    width: 255px;
-    height: 282px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
