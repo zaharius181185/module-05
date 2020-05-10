@@ -124,7 +124,8 @@ body {
     z-index: 1;
 }
 
-/* button */
+
+/*button slider*/
 .slider__btn__wrapper {
     position: absolute;
     top: 50%;
@@ -137,32 +138,29 @@ body {
 .slider__btn {
     width: 103px;
     height: 104px;
-    background-color: rgb(26, 188, 156);
+    background-color: rgba(78, 198, 171, 0.65);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
 }
 
 .prev {
     float: left;
     background-image: url(./images/prev_arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-}
-
-.inactive__btn {
-    background-color: rgba(78, 198, 171, 0.65);
 }
 
 .next {
     float: right;
     background-image: url(./images/next_arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
 }
 
-/* slider__title */
+.slider__btn:hover {
+    background-color: rgb(26, 188, 156);
+}
+
+
+/* slider title */
 .slider__name {
     position: absolute;
     top: 50%;
